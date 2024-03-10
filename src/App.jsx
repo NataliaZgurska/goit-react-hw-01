@@ -1,6 +1,7 @@
 import Profile from './components/Profile/Profile';
-import userData from './UserData.json'
-import './App.css'
+import FriendList from './components/FriendList/FriendList';
+import userData from './UserData.json';
+import friends from './friends.json';
 
 const { username, tag, location, avatar, stats } = userData;
 
@@ -13,7 +14,9 @@ const App = () => {
         location={location}
         image={avatar}
         stats={stats}
-      />
+      />
+      
+       <FriendList friends={friends} />
     </>
   );
 };
