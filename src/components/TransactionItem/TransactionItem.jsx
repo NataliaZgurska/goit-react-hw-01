@@ -1,12 +1,15 @@
+import css from './TransactionItem.module.css'
 
-const TransactionItem = ({type, amount, currency}) => {
+const TransactionItem = ({item}) => {
+
   return (
-       <tr>
-      <td>type</td>
-      <td>amount</td>
-      <td>currency</td>
+    <tr className={css.tableItem}>
+      <td>{item.type}</td>
+      <td>{item.amount}</td>
+      <td>{item.currency}</td>
     </tr>
   )
 }
 
 export default TransactionItem
+

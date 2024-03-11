@@ -1,0 +1,11 @@
+.tableContainer {
+  padding: 40px;
+}
+
+.tableHead {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,7 @@
+.tableItem {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+
+.tableItem:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.6);
+}
