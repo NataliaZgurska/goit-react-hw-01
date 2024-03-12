@@ -2,7 +2,9 @@ import css from './TransactionHistory.module.css'
 import TransactionItem from '../TransactionItem/TransactionItem'
 
 const TransactionHistory = ({items}) => {
-  return <table className={css.tableContainer}>
+  return(
+  <div className={css.tableContainer}>
+  <table className={css.table}>
   <thead className={css.tableHead}>
     <tr>
       <th>Type</th>
@@ -17,8 +19,9 @@ const TransactionHistory = ({items}) => {
 })}
     
   </tbody>
-</table>
-
+      </table>
+      </div>
+)
 }
 
 export default TransactionHistory

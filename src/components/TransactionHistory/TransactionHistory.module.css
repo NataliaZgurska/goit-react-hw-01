@@ -1,11 +1,16 @@
 .tableContainer {
-  padding: 40px;
+  margin: 40px;
+}
+
+.table {
+  width: 70%;
+  border-collapse: collapse;
 }
 
 .tableHead {
+  height: 70px;
   background-color: black;
   color: white;
-  font-size: 40px;
-  font-weight: bold;
-  border: 1px solid #ddd;
+  font-size: 30px;
+  border: 2px solid black;
 }
