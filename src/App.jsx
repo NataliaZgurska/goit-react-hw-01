@@ -10,6 +10,7 @@ import { useRef } from 'react';
 import Player from './components/RefExample/Player';
 import MeasureDiv from './components/RefExample/MeasureDiv';
 import ScrollDiv from './components/RefExample/ScrollDiv';
+import Forms from './components/Forms/Forms';
 
 const { username, tag, location, avatar, stats } = userData;
 const videoSrc = 'http://media.w3.org/2010/05/sintel/trailer.mp4';
@@ -17,6 +18,9 @@ const videoSrc = 'http://media.w3.org/2010/05/sintel/trailer.mp4';
 const App = () => {
   return (
     <>
+      <h2>Different type of forms</h2>
+      <Forms />
+
       <h2>Scroll Div Example (ref)</h2>
       <ScrollDiv />
 

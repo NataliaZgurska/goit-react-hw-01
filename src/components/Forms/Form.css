@@ -1,0 +1,29 @@
+.formsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 20px;
+  color: black;
+
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.formValue {
+  color: blueviolet;
+  font-weight: 800;
+}
+
+.radioBtnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.radioBtnLabel {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
