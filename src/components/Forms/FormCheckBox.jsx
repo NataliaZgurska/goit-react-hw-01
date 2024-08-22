@@ -1,38 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './Form.css';
 
-const FormCheckBox = () => {
-  const [selectedItems, setSelectedItems] = useState([]);
-  const handleCheckboxChange = event => {
-    const { value, checked } = event.target;
-    if (checked) {
-      setSelectedItems([...selectedItems, value]);
-    } else {
-      setSelectedItems(selectedItems.filter(item => item !== value));
-    }
-    console.log(event.target, event.target.checked);
+const FormCheckBox = ({ selectedItems, onSubmit }) => {
+  const handleSubmit = e => {
+    onSubmit(e.target);
   };
 
   return (
     <div>
-      <label>
-        <input
-          type="checkbox"
-          value="Option 1"
-          checked={selectedItems.includes('Option 1')}
-          onChange={handleCheckboxChange}
-        />
-        First
-      </label>
+      <div className="checkBoxItems">
+        <label className="radioBtnLabel">
+          Cheese
+          <input
+            type="checkbox"
+            value="cheese"
+            checked={selectedItems.includes('cheese')}
+            onChange={handleSubmit}
+          />
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          value="Option 2"
-          checked={selectedItems.includes('Option 2')}
-          onChange={handleCheckboxChange}
-        />
-        Second
-      </label>
+        <label className="radioBtnLabel">
+          Pepper
+          <input
+            type="checkbox"
+            value="pepper"
+            checked={selectedItems.includes('pepper')}
+            onChange={handleSubmit}
+          />
+        </label>
+
+        <label className="radioBtnLabel">
+          Onion
+          <input
+            type="checkbox"
+            value="onion"
+            checked={selectedItems.includes('onion')}
+            onChange={handleSubmit}
+          />
+        </label>
+      </div>
     </div>
   );
 };

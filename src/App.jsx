@@ -13,7 +13,7 @@ import ScrollDiv from './components/RefExample/ScrollDiv';
 import Forms from './components/Forms/Forms';
 
 const { username, tag, location, avatar, stats } = userData;
-const videoSrc = 'http://media.w3.org/2010/05/sintel/trailer.mp4';
+// const videoSrc = 'http://media.w3.org/2010/05/sintel/trailer.mp4';
 
 const App = () => {
   return (
@@ -30,8 +30,8 @@ const App = () => {
       <h2>RefExample</h2>
       <RefExample />
 
-      <h2>Ref with Player Example</h2>
-      <Player videoSrc={videoSrc} />
+      {/* <h2>Ref with Player Example</h2>
+      <Player videoSrc={videoSrc} /> */}
 
       <Profile
         name={username}
